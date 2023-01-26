@@ -26,7 +26,7 @@ const UserText = ({ data }) => {
         ) : (
           <span className="Avatar noneProfile">{name[0]}</span>
         )}
-        <span className="borderLine"></span>
+        {replies.length > 0 && <span className="borderLine"></span>}
       </div>
       <div className="Chats">
         <div className="UserName-time">
