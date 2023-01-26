@@ -1,4 +1,5 @@
 @import "../../scss/variables.scss";
+@import "../../scss/mixins";
 
 .HeadChat {
   width: 100%;
@@ -9,19 +10,12 @@
   border-bottom: 1px solid $borderColor;
   
   .Avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: $avatarColor;
+    @include avatar;
     margin-right: 15px;
   }
 
   .addText{
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid $borderColor;
-    outline: none;
+    @include input;
   }
 
   .addText::placeholder{

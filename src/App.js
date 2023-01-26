@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="container">
-        <HeadChat placeHolder="Start a discussion" />
+        <HeadChat />
         <ChatBox />
       </div>
     </div>

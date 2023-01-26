@@ -1,0 +1,30 @@
+@mixin avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+@mixin UserName-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin btnLike {
+    width: fit-content;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+}
+
+@mixin input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $borderColor;
+    outline: none;
+}

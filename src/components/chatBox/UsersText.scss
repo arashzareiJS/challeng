@@ -1,4 +1,5 @@
 @import "../../scss/variables.scss";
+@import "../../scss/mixins";
 
 .bodyChat {
   width: 100%;
@@ -14,9 +15,7 @@
 
     .Avatar,
     .noneProfile {
-      width: 45px;
-      height: 45px;
-      border-radius: 100%;
+      @include avatar;
     }
     .noneProfile {
       background-color: $avatarColor;
@@ -41,9 +40,7 @@
   }
 
   .UserName-time {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    @include UserName-time;
 
     .Time {
       font-size: 13px;
@@ -60,14 +57,7 @@
     align-items: center;
 
     .btnLike {
-      padding: 5px 15px;
-      cursor: pointer;
-      font-size: 20px;
-      border-radius: 25px;
-      margin-right: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include btnLike;
     }
 
     .liked {
@@ -91,16 +81,10 @@
     padding-right: 15px;
 
     img {
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
+      @include avatar;
     }
     .inputReply {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid $borderColor;
-      outline: none;
+      @include input;
     }
 
     .inputReply::placeholder {
