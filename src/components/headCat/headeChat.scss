@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+
+.HeadChat {
+  width: 100%;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid $borderColor;
+  
+  .Avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: $avatarColor;
+    margin-right: 15px;
+  }
+
+  .addText{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $borderColor;
+    outline: none;
+  }
+
+  .addText::placeholder{
+    color: $placeholderColor;
+  }
+}

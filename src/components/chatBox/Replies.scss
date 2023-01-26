@@ -1,0 +1,58 @@
+@import "../../scss/variables.scss";
+
+.Reply {
+  display: flex;
+
+  .ReplyChats {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ReplyAvatar {
+    width: 20%;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      margin-right: 25px;
+    }
+  }
+
+  .ReplyName-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .ReplyTime {
+      color: $timeColor;
+      font-size: 13px;
+    }
+  }
+
+  .ReplyText {
+    color: $textColor;
+  }
+
+  .ReplyBtnLike {
+    width: fit-content;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .Replyliked {
+    background-color: $primary;
+    color: $light;
+  }
+
+  .ReplydisLiked {
+    background-color: $gray;
+  }
+}

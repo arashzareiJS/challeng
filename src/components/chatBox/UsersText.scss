@@ -1,0 +1,109 @@
+@import "../../scss/variables.scss";
+
+.bodyChat {
+  width: 100%;
+  display: flex;
+  padding: 15px 10px;
+
+  .Profile {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    .Avatar,
+    .noneProfile {
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+    }
+    .noneProfile {
+      background-color: $avatarColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .borderLine {
+      width: 1px;
+      height: 100%;
+      background-color: $borderColor;
+    }
+  }
+
+  .Chats {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .UserName-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .Time {
+      font-size: 13px;
+      color: $timeColor;
+    }
+  }
+
+  .text {
+    color: $textColor;
+  }
+
+  .like-reply {
+    display: flex;
+    align-items: center;
+
+    .btnLike {
+      padding: 5px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 25px;
+      margin-right: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .liked {
+      background-color: $primary;
+      color: $light;
+    }
+
+    .disLiked {
+      background-color: $gray;
+    }
+
+    .reply {
+      color: $primary;
+      cursor: pointer;
+    }
+  }
+  .AddReply {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-right: 15px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+    .inputReply {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $borderColor;
+      outline: none;
+    }
+
+    .inputReply::placeholder {
+      color: $placeholderColor;
+    }
+  }
+}
